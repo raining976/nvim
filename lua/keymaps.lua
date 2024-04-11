@@ -68,6 +68,10 @@ map("n", "<Leader>Q",":q!<CR>", opts)
 map("n", "H","^",opts)
 map("n", "L","$",opts)
 
+-- neo formatter
+
+map('n','<A-F>',':Neoformat<CR>',opts)
+
 
 -----------------
 -- Insert mode --
@@ -75,6 +79,13 @@ map("n", "L","$",opts)
 
 map('i', '<C-h>', '<ESC>I', opts)
 map('i', '<C-l>', '<ESC>A', opts)
+
+map('i', 'C-j', '<ESC>o', opts)
+map('i', 'C-k', '<ESC>O', opts)
+
+-- Neoformat
+
+map('n','<A-f>',':Neoformat<CR>',opts)
 
 
 -----------------
